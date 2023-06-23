@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #101010;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.circulo{
+    width: 100px;
+    padding: 100px;
+    background: rgb(243, 255, 132);
+    border-radius: 50%;
+    
+}
+.triangulo{
+    
+    border-top: solid transparent 0px;
+    border-left: solid transparent 80px;
+    border-right: solid transparent 80px;
+    border-bottom: solid green 100px;
+
+}
+.rectangulo{
+    width: 400px;
+    padding: 50px;
+    background: violet;
+}
+  .pentagono{
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+.pentagono:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+
+
